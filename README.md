@@ -20,7 +20,7 @@ The extracted endpoints will be displayed on the page.
 This will also work on mobile browsers if you sync your bookmarks.
 ## How It Works
 Regular Expression: Uses a regular expression to match endpoint URLs within scripts.
-Recursive Fetching: Fetches script content recursively up to a specified depth (default is 3) to ensure deeper analysis.
+Recursive Fetching: Fetches script content recursively up to a specified depth (default is 3) to ensure deeper analysis.  
 Result Display: Extracted URLs are collected in a Set to ensure uniqueness and then written to the document for easy viewing.
 ## Customization
 Recursion Depth: Adjust the recursion depth by modifying the if(depth>3)return; line in the bookmarklet code.
