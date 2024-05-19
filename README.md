@@ -18,13 +18,15 @@ Click on the "Show Endpoints" bookmark.
 Wait a few seconds for the bookmarklet to fetch and process the scripts.
 The extracted endpoints will be displayed on the page.
 This will also work on mobile browsers if you sync your bookmarks.
+  
+*warning -- If you're authenicated, this script will sometimes emulate behavior on your behalf.*  
 ## How It Works
-Regular Expression: Uses a regular expression to match endpoint URLs within scripts.
+Regular Expression: Uses a regular expression to match endpoint URLs within scripts.  
 Recursive Fetching: Fetches script content recursively up to a specified depth (default is 3) to ensure deeper analysis.  
-Result Display: Extracted URLs are collected in a Set to ensure uniqueness and then written to the document for easy viewing.
+Result Display: Extracted URLs are collected in a Set to ensure uniqueness and then written to the document for easy viewing.  
 ## Customization
-Recursion Depth: Adjust the recursion depth by modifying the if(depth>3)return; line in the bookmarklet code.
-Timeout Duration: Change the timeout duration by modifying the setTimeout(writeResults, 5000); line to allow more or less time for script fetching.
+Recursion Depth: Adjust the recursion depth by modifying the if(depth>3)return; line in the bookmarklet code.  
+Timeout Duration: Change the timeout duration by modifying the setTimeout(writeResults, 5000); line to allow more or less time for script fetching.  
 Limitations
 CORS Restrictions: Some scripts may not be fetchable due to cross-origin resource sharing (CORS) policies.
 Depth Limit: The recursion depth is limited to prevent infinite loops, but this can be adjusted if needed.
